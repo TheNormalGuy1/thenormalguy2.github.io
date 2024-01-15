@@ -1,0 +1,150 @@
+/* CSS document */
+
+body {
+  font-family: Georgia;
+  background-color: rgb(0,0,0); /* I would reccomend an off-black to redcuce eye strain like rgb(20,20,20) instead of just "black" */
+  padding: 1em;
+  color: rgb(255,255,255); /* I would reccomend an off-white to redcuce eye strain like rgb(240, 240, 240) instead of just "white" */
+
+  /* Makes content not expand forever */
+  max-width: 50em;
+  margin: auto;
+}
+
+/* HARPER BRYANT SHIN text logo */
+header h1 {
+    text-transform: uppercase; /* Use this instead of typing in all caps in the HTML document */
+    text-align: center; /* Ew */
+    font-size: 2em;
+}
+
+/* HARPER BRYANT SHIN as link back to main page (forces link decoration back to normal) */
+header h1 a {
+  text-decoration: none; /* Removes underline. */
+  color: rgb(255,255,255); /* I would reccomend an off-white to redcuce eye strain like rgb(240, 240, 240) instead of just "white." */
+}
+
+/* Main page title "Beginning of an incredible website" */
+h2 {
+  font-family: Georgia;
+  line-height: 1.4em; /* Leading. */
+  font-size: 2em; 
+  padding: 0em 0em 0em 0em;
+}
+
+/* Other page titles */
+h3 {
+  font-family: Georgia;
+  line-height: 1.4em;
+  font-size: 2em; 
+  padding: 0em 0em 0em 0em;
+  margin-bottom: 0;
+}
+
+/* All paragraphs */
+p {
+  font-family: Georgia;
+  line-height: 1.3em;
+  font-size: 1em; /* Might want to make type size a bit bigger for our old eyes. Like 1.3em or so. */
+  padding: 0em 0em 1em 0em;
+}
+
+/* Non-crappy looking links (in main content - see About and Contact pages) */
+main a {
+  /* font-weight: bold; */
+  text-decoration: none;
+  color: rgb(255, 160, 0)
+}
+
+/* Nav bar border */
+nav {
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+/* Nav bar buttons */
+nav a {
+  color: rgb(255,255,255); /* I would reccomend an off-white to redcuce eye strain like rgb(240, 240, 240) instead of just white-white. */
+  text-decoration: none;
+  padding: 1em;
+}
+
+/* Fixes default space around lists (re-aligns nav bar) */
+ul, ol {
+  margin: 0;
+	padding: 0.5em 0;
+}
+
+/* Indivudal nav bar text and alignment */
+nav ul li {
+  background-color: inherit;
+  color: white;
+  font-family: Georgia;
+  display: inline-block;
+  list-style-type: none;
+  cursor: pointer;
+  transition: 0.3s; /* Why!? */
+  font-size: 1em;
+}
+
+/* Change background color of buttons on hover */
+nav a:hover {
+  background-color: #808080;
+}
+
+/* Scale of all images */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Adds border around each page section and the space inside it */
+section {
+  border: 1px solid #ccc;
+  border-top: none;
+  padding: 1em 1em 2em 1em; /* Space around border. Top, right, bottom, left. */
+}
+
+/* Active tab gray background */
+li.active a {
+  /* background-color: #BFBFBF; */
+  background-color: #808080;
+}
+
+/* About section */
+section.about h3 {
+  padding: 0em 0em 1em 0em;
+}
+
+/* Puts your photo on the left and the description on the right if user's screen size is wide enough */
+@media only screen and (min-width: 50em) {
+  /* Container holds both elements. */
+  section.about div.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Each element takes up 50% of the page width. */
+  section.about div.left {
+    flex: 1 0 50%; /* Relative grow amount, relative shrink amount, width ratio. */
+  }
+
+  section.about div.right {
+    flex: 1 0 50%;    
+  }
+
+  /* Fixes space around About paragraph. */
+  section.about div.right p {
+    margin: 0;
+    padding: 0em 0em 0em 1em; /* Space between image and paragraph. */
+  }
+
+}
+
+/* Contact section (un-uglifies list) */
+section.contact ul {
+  list-style-type: none;
+  line-height: 2em;
+}
+
+

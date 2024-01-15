@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<center>
+<div class="header">
+  <h1>HARPER BRYANT SHIN</h1>
+</div>
+</center>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harper Bryant Shin</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Georgia;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #000000;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  color: white;
+  text-align: center;
+  font-family: Georgia;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 8px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #808080;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #BFBFBF;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid white;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Portfolio')">Portfolio</button>
+  <button class="tablinks" onclick="openCity(event, 'Gallery')">Gallery</button>
+  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+</div>
+
+<!-- Tab content -->
+<div id="Portfolio" class="tabcontent">
+  <h3>Portfolio</h3>
+  <img src="/citr4 colors.jpg" width="100%" height="100%" />
+  <img src="/coloring pdfs_Page_5.jpg" width="100%" height="100%" />
+  <img src="/coloring pdfs_Page_2.jpg" width="100%" height="100%" />
+  <img src="/mouse1color copy.jpg" width="100%" height="100%" />
+  <img src="/mouse2color copy.jpg" width="100%" height="100%" />
+  <img src="/oldhomesteadwebversion.jpg" width="100%" height="100%" />
+</div>
+
+<div id="Gallery" class="tabcontent">
+  <h3>Gallery</h3>
+  <p> Some of my non-comics work!</p>
+  <img src="/IMG-8657.jpg" width="100%" height="100%" />
+  <img src="/IMG-8658.jpg" width="100%" height="100%" />
+  <img src="/IMG-8659.jpg" width="100%" height="100%" />
+  <img src="/IMG-8660.jpg" width="100%" height="100%" />
+  <img src="/IMG_0407.jpg" width="100%" height="100%" />
+  <img src="/IMG_0408.jpg" width="100%" height="100%" />
+</div>
+
+
+<div id="About" class="tabcontent">
+  <h3>About Me</h3>
+  <img src="/artist photo.jpg" width="50%" height="50%" />
+  <p>I'm an Oregon-born visual artist studying comics at the School of Visual Arts in New York City. I work in a variety of genres and media, primarily ink and Photoshop. I'm always looking for opportunties to work in comics and to collaborate with other artists. My work has been featured in <a href="https://epicwaynepress.neocities.org/store" target="_blank">Epic Wayne Quarterly</a> and <a href="https://www.inksva.com/fall-2023" target="_blank">Ink Magazine</a>.</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact Information</h3>
+    <ul>
+     <li><a href="https://www.instagram.com/harperbryantshin/" target="_blank">@harperbryantshin</a> on Instagram</li>
+     <li>harperbryantshin@gmail.com</li>
+     <li>Check out my work with <a href="https://epicwaynepress.neocities.org/" target="_blank">Epic Wayne Press</a>!</li>
+   </ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+  <body>
+    <h1>1/11/24 The Beginning of an Incredible Website</h1>
+
+    <p>Welcome! My name is Harper and I'm an NYC-based comic book artist. This is the beginning of my website. I'll be using this site as a place to store my portfolio, contact info, etc. It may look rough now, but eventually I'll figure out html and it will be glorious.</p>
+
+
+  </body>
+</html>

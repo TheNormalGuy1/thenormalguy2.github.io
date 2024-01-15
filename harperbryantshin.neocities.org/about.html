@@ -1,0 +1,68 @@
+<!doctype html>  
+<html>  
+    <head>  
+        <!-- Does a bunch of crap. -->
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />  
+        <meta http-equiv="Pragma" content="no-cache" />  
+        <meta http-equiv="Expires" content="0" />  
+
+        <!-- Search engine stuff. -->
+        <meta name="keywords" content="Harper, art, comics, School of Visual Arts, New York City, media, ink, Photoshop">
+        <meta name="description" content="I'm an Oregon-born visual artist studying comics at the School of Visual Arts in New York City.">
+        <meta name="author" content="Harper Bryant Shin">
+
+        <!-- Links to style sheet. ALWAYYYYYS adjust styles in seperate CSS document. -->
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+
+        <!-- Title that appears in the browser tab. -->
+        <title>Harper Bryant Shin</title>
+    </head>
+    
+    <body>
+        
+        <header>
+
+            <!-- The a href="index.html" makes the name logo into a link back to the main page. -->
+            <h1><a href="index.html">Harper Bryant Shin</a></h1>
+
+            <!-- The `li class="active"` is what tells the CSS to highlight the active page tab. -->
+            <nav>
+                <ul>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        
+        <main>
+
+            <section class="about">
+
+                <h3>About Me</h3>
+
+            <!-- Container holds (contains, get it?) both elements. CSS file: section.about div.container { display: flex; flex-wrap: wrap; } -->
+            <div class="container">
+
+                <!-- Individual elements within container. CSS file: section.about div.left/right { flex: 1 0 50%; } -->
+                <div class="left">
+                <img src="/artist photo.jpg" alt="Alt text here. Have fun describing yourself." />
+                </div>  
+
+                <div class="right">
+                <p>I'm an Oregon-born visual artist studying comics at the School of Visual Arts in New York City. I work in a variety of genres and media, primarily ink and Photoshop. I'm always looking for opportunties to work in comics and to collaborate with other artists. My work has been featured in <a href="https://epicwaynepress.neocities.org/store" target="_blank">Epic Wayne Quarterly</a> and <a href="https://www.inksva.com/fall-2023" target="_blank">Ink Magazine</a>.</p>
+                </div>
+            
+            </div>
+
+            </section>
+
+        </main>
+
+    </body>      
+        
+</html>
